@@ -48,6 +48,11 @@
                 >
               </li>
             </ul>
+            <div class="navigation__icon__box">
+              <svg class="navigation__icon" width="24px" height="16px">
+                <use href="./images/icons.svg#nav-icon"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -70,7 +75,7 @@
           <ul class="post-list">
             <li class="post">
               <div class="post__icon-background">
-                <svg width="70px" height="70px">
+                <svg class="post__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-satelite"></use>
                 </svg>
               </div>
@@ -82,7 +87,7 @@
             </li>
             <li class="post">
               <div class="post__icon-background">
-                <svg width="70px" height="70px">
+                <svg class="post__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -94,7 +99,7 @@
             </li>
             <li class="post">
               <div class="post__icon-background">
-                <svg width="70px" height="70px">
+                <svg class="post__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -106,7 +111,7 @@
             </li>
             <li class="post">
               <div class="post__icon-background">
-                <svg width="70px" height="70px">
+                <svg class="post__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -176,15 +181,15 @@
       <section class="our-team-section">
         <div class="container">
           <div class="our-team-section__block">
-            <h2 class="section-title">Nasz zespół</h2>
+            <h2 class="our-team-section__title">Nasz zespół</h2>
             <ul class="team-list">
               <li class="teammate-box">
                 <figure>
                   <img
-                    src="images/Productdesigner.jpg"
+                    class="teammate-box__photo"
+                    src="images/our-team/pdesignerx1.jpg"
+                    srcset="images/our-team/pdesignerx2.jpg 2x"
                     alt="Mężczyzna z brodą w okularach i koszuli na białym tle"
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <p class="teammate-box__name">John Doe</p>
@@ -233,10 +238,10 @@
               <li class="teammate-box">
                 <figure>
                   <img
-                    src="images/Frontenddeveloper.jpg"
+                    class="teammate-box__photo"
+                    src="images/our-team/frontendx1.jpg"
+                    srcset="images/our-team/frontendx2.jpg 2x"
                     alt="Kobieta o długich blond włosach w okularach i marynarce"
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <p class="teammate-box__name">John Doe</p>
@@ -285,10 +290,10 @@
               <li class="teammate-box">
                 <figure>
                   <img
-                    src="images/Marketing.jpg"
+                    class="teammate-box__photo"
+                    src="images/our-team/marketingx1.jpg"
+                    srcset="images/our-team/marketingx2.jpg 2x"
                     alt="Mężczyzna w eleganckiej błękitnej koszuli"
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <p class="teammate-box__name">John Doe</p>
@@ -337,10 +342,10 @@
               <li class="teammate-box">
                 <figure>
                   <img
-                    src="images/uidesigner.jpg"
+                    class="teammate-box__photo"
+                    src="images/our-team/uidesignerx1.jpg"
+                    srcset="images/our-team/uidesignerx2.jpg x2"
                     alt="Mężczyzna w okularach i czarnej koszulce"
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <p class="teammate-box__name">John Doe</p>
@@ -390,7 +395,7 @@
           </div>
         </div>
       </section>
-      <section class="our-customers-section">
+      <!-- <section class="our-customers-section">
         <div class="container">
           <h2 class="section-title">Nasi klienci</h2>
           <ul class="our-customers">
@@ -454,9 +459,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+    
     </main>
-    <footer>
+    <!-- <footer>
       <section class="footer-section">
         <div class="container">
           <div class="footer">
@@ -668,5 +674,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script> -->
   </body>
 </html>

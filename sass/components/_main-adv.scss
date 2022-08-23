@@ -1,33 +1,33 @@
 .main-header-section {
   background-color: $backgroundColor;
-  color: #ffffff;
-  width: 1600px;
   text-align: center;
   justify-content: center;
   display: flex;
-  padding: 200px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/backgroundimg.jpg);
+    url(../images/main-adv/Main-adv-x1.jpg);
 }
 .main-advertisment {
-  padding: 0 15px;
+  padding: 118px 0;
+  text-align: center;
+
   &__header {
+    color: #ffffff;
     font-family: $primaryFontStyle;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: calc(60 / 44);
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
     padding-bottom: 30px;
+    padding-left: 42px;
+    padding-right: 43px;
   }
   &__button {
-    cursor: pointer;
     background-color: $hoverColor;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -39,7 +39,52 @@
     color: #ffffff;
     border: none;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
-    width: 200px;
-    height: 50px;
+    padding: 10px 41px 10px;
   }
 }
+
+// .main-header-section {
+//   background-color: $backgroundColor;
+//   color: #ffffff;
+//   width: 1600px;
+//   text-align: center;
+//   justify-content: center;
+//   display: flex;
+//   padding: 200px 0;
+//   background-image: linear-gradient(
+//       to bottom,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/backgroundimg.jpg);
+// }
+// .main-advertisment {
+//   padding: 0 15px;
+//   &__header {
+//     font-family: $primaryFontStyle;
+//     font-size: 44px;
+//     font-weight: 900;
+//     line-height: calc(60 / 44);
+//     letter-spacing: 0.06em;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 696px;
+//     padding-bottom: 30px;
+//   }
+//   &__button {
+//     cursor: pointer;
+//     background-color: $hoverColor;
+//     font-size: 16px;
+//     line-height: calc(30 / 16);
+//     font-weight: 700;
+//     font-family: $primaryFontStyle;
+//     border-radius: 4px;
+//     letter-spacing: 0.06em;
+//     text-align: center;
+//     color: #ffffff;
+//     border: none;
+//     box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+//     width: 200px;
+//     height: 50px;
+//   }
+// }
