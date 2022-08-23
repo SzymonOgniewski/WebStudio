@@ -1,0 +1,74 @@
+.team-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+.our-team-section {
+  background-color: #f5f4fa;
+  width: 1600px;
+  &__block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.teammate-box {
+  background-color: #ffffff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(18.75 / 16);
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    padding-top: 30px;
+  }
+  &__job {
+    color: #757575;
+    letter-spacing: 0.03em;
+    line-height: calc(18.75 / 16);
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+}
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  &__background {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    padding: 12px;
+    &:not(:last-child) {
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+    &:hover .socialmedia__background__icon,
+    :focus .socialmedia__background__icon {
+      fill: #ffffff;
+      cursor: pointer;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      transition-property: fill;
+    }
+    &:hover,
+    :focus {
+      background-color: $hoverColor;
+      cursor: pointer;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      transition-property: background-color;
+    }
+    &__icon {
+      fill: #afb1b8;
+    }
+  }
+}
