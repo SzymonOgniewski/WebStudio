@@ -1,5 +1,6 @@
 .team-list {
   padding-bottom: 94px;
+  text-align: -webkit-center;
 }
 .our-team-section {
   background-color: #f5f4fa;
@@ -23,9 +24,7 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   margin-bottom: 30px;
   width: 450px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+
   &__photo {
     width: 450px;
     height: 460px;
