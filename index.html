@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <title>WebStudio</title>
   </head>
   <body>
@@ -49,9 +54,16 @@
               </li>
             </ul>
             <div class="navigation__icon__box">
-              <svg class="navigation__icon" width="24px" height="16px">
-                <use href="./images/icons.svg#nav-icon"></use>
-              </svg>
+              <button
+                type="button"
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+              >
+                <svg class="navigation__icon" width="24px" height="16px">
+                  <use href="./images/icons.svg#nav-icon"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -344,7 +356,7 @@
                   <img
                     class="teammate-box__photo"
                     src="images/our-team/uidesignerx1.jpg"
-                    srcset="images/our-team/uidesignerx2.jpg x2"
+                    srcset="images/our-team/uidesignerx2.jpg 2x"
                     alt="Mężczyzna w okularach i czarnej koszulce"
                   />
                   <figcaption>
@@ -626,9 +638,10 @@
             <label class="modal-checkbox">
               <span class="modal-checkbox__text"
                 >Oświadczam iż akceptuję
-                <a href="" class="modal-checkbox__link">Regulamin</a> i
+                <a href="" class="modal-checkbox__link">Regulamin</a>
+                <span>i</span>
                 <a href="" class="modal-checkbox__link">Politykę Prywatności</a
-                >.</span
+                ><span>.</span></span
               >
               <input
                 required
@@ -637,14 +650,10 @@
                 name="privacy-policy"
                 value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
               />
-
               <span class="modal-checkbox__checkmark">
                 <svg class="modal-checkbox__icon" width="16px" height="15px">
                   <use href="./images/icons.svg#icon-icon-check"></use>
-                </svg> </span
-              ><span class="modal-checkbox__invalid-message">
-                Proszę zapoznać się z Regulaminem i Polityką Prywatności oraz
-                zaznaczyć pole aby kontynuować.
+                </svg>
               </span>
             </label>
             <div class="modal-form__submit-button__block">
@@ -656,7 +665,30 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="18px" height="18px">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul>
+        <li><a href="./index.html" >Agencja</a></li>
+        <li><a href="./portfolio.html" >Portfolio</a></li>
+        <li><a href="" >Kontakt</a></li>
+      </ul>
+      <ul>
+        <li><a>+48 111 111 111</a></li>
+        <li><a>info@devstudio.com</a></li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
