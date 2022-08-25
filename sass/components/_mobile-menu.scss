@@ -67,7 +67,8 @@
   &__socialmedia {
     display: inline-flex;
     flex-wrap: wrap;
-    padding-top: 64px;
+    // padding-top: 64px;
+    padding-top: 8%;
     &__list-item {
       font-style: $primaryFontStyle;
       font-size: 18px;
@@ -104,7 +105,7 @@
   }
 }
 .mobile-menu-contacts {
-  padding-top: 302px;
+  padding-top: 87%;
   &__tel {
     font-family: $primaryFontStyle;
     font-size: 34px;

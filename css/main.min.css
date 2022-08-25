@@ -528,8 +528,8 @@ body {
   padding-bottom: 30px;
 }
 .project__photo {
-  width: 450px;
-  height: 294px;
+  width: 100%;
+  height: 100% px;
 }
 .project__card {
   background-color: #ffffff;
@@ -580,6 +580,7 @@ body {
 .overlay {
   background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -596,6 +597,8 @@ body {
 }
 
 .portfolio-card-description {
+  display: flex;
+  justify-content: center;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -909,7 +912,7 @@ body {
 .mobile-menu__socialmedia {
   display: inline-flex;
   flex-wrap: wrap;
-  padding-top: 64px;
+  padding-top: 8%;
 }
 .mobile-menu__socialmedia__list-item {
   font-style: "Roboto", sans-serif;
@@ -946,7 +949,7 @@ body {
 }
 
 .mobile-menu-contacts {
-  padding-top: 302px;
+  padding-top: 87%;
 }
 .mobile-menu-contacts__tel {
   font-family: "Roboto", sans-serif;
