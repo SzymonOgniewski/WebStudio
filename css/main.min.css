@@ -480,14 +480,17 @@ body {
 }
 
 .button-section {
-  width: 1600px;
+  display: flex;
+  flex-basis: 3.0303030303%;
+  padding-top: 45px;
 }
 
 .portfolio-section {
-  width: 1600px;
+  padding-top: 40px;
 }
 
 .button {
+  margin-top: 15px;
   text-align: center;
   font-size: 16px;
   line-height: 1.625;
@@ -499,7 +502,9 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  padding: 6px 22px;
+  text-align: center;
+  width: 126px;
+  height: 38px;
 }
 .button:hover,
 .button :focus {
@@ -511,27 +516,20 @@ body {
   transition-duration: 250ms;
   transition-property: box-shadow, background-color;
 }
-.button:not(:last-child) {
-  margin-right: 8px;
-}
 
 .buttons {
-  padding: 94px 15px 50px 15px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
-  display: flex;
   background-color: #ffffff;
+  gap: 8px;
 }
 
 .project:not(:last-child) {
-  padding-right: 30px;
-}
-.project:nth-child(3n) {
-  padding-right: 0;
-}
-.project:nth-child(-n+6) {
   padding-bottom: 30px;
+}
+.project__photo {
+  width: 450px;
+  height: 294px;
 }
 .project__card {
   background-color: #ffffff;
@@ -579,17 +577,13 @@ body {
   background-color: white;
 }
 
-.photo {
-  display: block;
-}
-
 .overlay {
   background-color: rgba(33, 150, 243, 0.9);
-  width: 370px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 49px 45px 49px 24px;
+  padding: 77px 24px;
   transform: translateY(148%);
   margin-bottom: 110px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -611,13 +605,7 @@ body {
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.project-list__block {
-  width: 1200px;
-  justify-content: center;
-  padding: 0 15px 94px 15px;
+  padding-bottom: 60px;
 }
 
 .backdrop {
@@ -874,6 +862,9 @@ body {
 }
 .menu-toggle:focus {
   fill: #2196f3;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
 }
 
 .menu-container {
@@ -882,7 +873,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 40px 0 0;
+  padding: 48px 40px;
   background-color: white;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -890,4 +881,89 @@ body {
 
 .menu-container.is-open {
   transform: translateX(0);
+}
+
+.mobile-menu__close-button {
+  background-color: white;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid rgba(0, 0, 0, 0.1019607843) 1px;
+  right: 8px;
+  top: 8px;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.mobile-menu__close-button:hover,
+.mobile-menu__close-button :focus {
+  fill: #2196f3;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: transform;
+}
+.mobile-menu__socialmedia {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-top: 64px;
+}
+.mobile-menu__socialmedia__list-item {
+  font-style: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-menu__socialmedia__list-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid #757575;
+}
+.mobile-menu__socialmedia__list-item:not(:first-child) {
+  padding-left: 10px;
+}
+.mobile-menu__navigation-item:not(:last-child) {
+  padding-bottom: 36px;
+}
+.mobile-menu__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.172;
+  color: black;
+}
+.mobile-menu__link:focus,
+.mobile-menu__link :hover {
+  color: #2196f3;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
+}
+
+.mobile-menu-contacts {
+  padding-top: 302px;
+}
+.mobile-menu-contacts__tel {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  line-height: 1.1717647059;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: #2196f3;
+}
+.mobile-menu-contacts__list-item:not(:first-child) {
+  padding-top: 32px;
+}
+.mobile-menu-contacts__mail {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.1720833333;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #757575;
 }/*# sourceMappingURL=main.min.css.map */
