@@ -45,6 +45,29 @@
     align-self: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .our-customers-section {
+    &__title {
+      font-size: 36px;
+      line-height: calc(42.19 / 36);
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
+  }
+  .our-customers {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 94px;
+  }
+  .customer-background {
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
 .our-customers-section {
   background-color: #ffffff;
   &__title {

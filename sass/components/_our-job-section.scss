@@ -1,7 +1,51 @@
-.our-job-section {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .our-job-section {
+    display: none;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .our-job-section {
+    background-color: #ffffff;
+    &__title {
+      font-family: $primaryFontStyle;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: calc(42.19 / 36);
+      letter-spacing: 0.03em;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    &__block {
+      padding-bottom: 94px;
+    }
+    &__images-list {
+      display: inline-flex;
+    }
+  }
+  .image-block {
+    display: block;
+    position: relative;
+    &:not(:last-child) {
+      padding-right: 30px;
+    }
+    &__title-box {
+      position: absolute;
+      width: 370px;
+      background-color: rgba(47, 48, 58, 0.8);
+      top: 224px;
+      &__text {
+        font-family: $primaryFontStyle;
+        font-size: 14px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: calc(16.41 / 14);
+        text-align: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+      }
+    }
+  }
+}
 // .our-job-section {
 //   width: 1600px;
 //   background-color: #ffffff;

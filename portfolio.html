@@ -22,37 +22,41 @@
       <section class="header-section">
         <div class="container">
           <div class="page-header">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a class="logo" href="index.html"><span>Web</span>Studio</a>
-              </li>
-              <li class="navigation__item">
-                <a class="nav-link current" href="index.html">Agencja</a>
-              </li>
-              <li class="navigation__item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="navigation__item">
-                <a class="nav-link" href="kontakt.html">Kontakt</a>
-              </li>
-            </ul>
-            <ul class="contacts">
-              <li class="contact__block">
-                <a class="contact"
-                  ><svg class="contacts__icon" width="16px" height="12px">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="contact__block">
-                <a class="contact"
-                  ><svg class="contacts__icon" width="10px" height="16px">
-                    <use href="./images/icons.svg#icon-smartphone"></use></svg
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
+            <div class="page-header__menu">
+              <ul class="navigation">
+                <li class="navigation__item">
+                  <a class="logo" href="index.html"><span>Web</span>Studio</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="nav-link" href="index.html">Agencja</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="nav-link current" href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+              </ul>
+              <ul class="contacts">
+                <li class="contact__block">
+                  <a class="contact"
+                    ><svg class="contacts__icon" width="16px" height="12px">
+                      <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contact__block">
+                  <a class="contact"
+                    ><svg class="contacts__icon" width="10px" height="16px">
+                      <use href="./images/icons.svg#icon-smartphone"></use></svg
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </div>
             <div class="navigation__icon__box">
               <button
                 type="button"
@@ -89,7 +93,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/technocrack.jpg"
+                    src="images/Portfolio/Technocrack@x1.jpg"
+                    srcset="images/Portfolio/Technocrack@x2.jpg 2x"
                     alt="Laptop wyświetlający stronę internetową Technocrack"
                   />
                   <div class="overlay">
@@ -110,7 +115,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/grafika.jpg"
+                    src="images/Portfolio/grafika@x1.jpg"
+                    srcset="images/Portfolio/grafika@x2.jpg 2x"
                     alt="Grafika meczu koszykówki New Orlean vs Golden Star"
                   />
                   <div class="overlay">
@@ -133,7 +139,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/restauracja.jpg"
+                    src="images/Portfolio/seafood@x1.jpg"
+                    srcset="images/Portfolio/seafood@x2.jpg 2x"
                     alt="Logo restauracji Seafood"
                   />
                   <div class="overlay">
@@ -154,7 +161,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/projekt.jpg"
+                    src="images/Portfolio/prime@x1.jpg"
+                    srcset="images/Portfolio/prime@x2.jpg 2x"
                     alt="Czarne słuchawki nauszne"
                   />
                   <div class="overlay">
@@ -175,7 +183,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/boxes.jpg"
+                    src="images/Portfolio/boxes@x1.jpg"
+                    srcset="images/Portfolio/boxes@x2.jpg 2x"
                     alt="Dwa pudełka"
                   />
                   <div class="overlay">
@@ -196,7 +205,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/inspiration.jpg"
+                    src="images/Portfolio/inspiration@x1.jpg"
+                    srcset="images/Portfolio/inspiration@x2.jpg 2x"
                     alt="Monitor wyświetlający stronę internetową"
                   />
                   <div class="overlay">
@@ -217,7 +227,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/magazyn.jpg"
+                    src="images/Portfolio/magazyn@x1.jpg"
+                    srcset="images/Portfolio/magazyn@x2.jpg 2x"
                     alt="Otwarte czasopismo z obrazkami"
                   />
                   <div class="overlay">
@@ -238,7 +249,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/lab.jpg"
+                    src="images/Portfolio/lab@x1.jpg"
+                    srcset="images/Portfolio/lab@x2.jpg 2x"
                     alt="Zawieszka z napisem Label tag"
                   />
                   <div class="overlay">
@@ -259,7 +271,8 @@
                 <figure class="project__card">
                   <img
                     class="project__photo"
-                    src="images/growingbusiness.jpg"
+                    src="images/Portfolio/business@x1.jpg"
+                    srcset="images/Portfolio/business@x2.jpg 2x"
                     alt="Laptop leżący na kolanach człowieka wyświetlający aplikację growing business"
                   />
                   <div class="overlay">
@@ -341,33 +354,34 @@
                   </li>
                 </ul>
               </div>
-              <form name="newsletter-form">
-                <label>
-                  <span class="newsletter-form__name"
-                    >ZAPISZ SIĘ DO NEWSLETTERA</span
-                  >
-                  <input
-                    class="newsletter-form__input"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                </label>
-                <button class="newsletter-form__submit-button" type="submit">
-                  <div class="newsletter-form__submit-button__block">
-                    <span class="newsletter-form__submit-button__text"
-                      >Zapisz się</span
-                    >
-                    <div class="newsletter-form__sumbit-icon-block">
-                      <svg width="24px" height="24px">
-                        <use href="./images/icons.svg#icon-icon-send"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </form>
             </div>
+
+            <form class="newsletter-form" name="newsletter-form">
+              <label>
+                <span class="newsletter-form__name"
+                  >ZAPISZ SIĘ DO NEWSLETTERA</span
+                >
+                <input
+                  class="newsletter-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="newsletter-form__submit-button" type="submit">
+                <div class="newsletter-form__submit-button__block">
+                  <span class="newsletter-form__submit-button__text"
+                    >Zapisz się</span
+                  >
+                  <div class="newsletter-form__sumbit-icon-block">
+                    <svg width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </form>
           </div>
         </div>
       </section>

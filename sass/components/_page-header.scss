@@ -2,45 +2,6 @@
   .logo {
     padding-right: 83px;
   }
-  .navigation {
-    &__item {
-      align-self: center;
-
-      &:nth-child(2) {
-        padding-right: 7.8%;
-      }
-      &:nth-child(3) {
-        padding-right: 7.8%;
-      }
-    }
-  }
-  .contacts {
-    align-items: flex-start;
-    padding-left: 13.02%;
-  }
-  .contact {
-    &__block {
-      &:not(:last-child) {
-        padding-bottom: 10px;
-      }
-    }
-  }
-  .current {
-    position: relative;
-    &::after {
-      content: "";
-      height: 4px;
-      background: #2196f3;
-      position: absolute;
-      bottom: -40px;
-      border-radius: 2px;
-      text-transform: uppercase;
-      width: 100%;
-      left: 0;
-    }
-  }
-}
-@media screen and (min-width: 768px) {
   .page-header {
     &__menu {
       justify-content: space-between;
@@ -117,7 +78,45 @@
       }
     }
   }
+  .navigation {
+    &__item {
+      align-self: center;
+
+      &:nth-child(2) {
+        padding-right: 7.8%;
+      }
+      &:nth-child(3) {
+        padding-right: 7.8%;
+      }
+    }
+  }
+  .contacts {
+    align-items: flex-start;
+    padding-left: 13.02%;
+  }
+  .contact {
+    &__block {
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .current {
+    position: relative;
+    &::after {
+      content: "";
+      height: 4px;
+      background: #2196f3;
+      position: absolute;
+      bottom: -40px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      width: 100%;
+      left: 0;
+    }
+  }
 }
+
 @media screen and (max-width: 767px) {
   .nav-link {
     display: none;
@@ -157,7 +156,121 @@
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .page-header {
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+  }
 
+  .header-section {
+    border-bottom: solid #ececec 1px;
+    padding: 24px 0 25px 0;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      display: flex;
+    }
+    &__item:nth-child(n + 2):not(:last-child) {
+      padding-right: 46px;
+    }
+  }
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1738461538;
+    color: black;
+    letter-spacing: 0.03em;
+    padding-right: 93px;
+    & span {
+      color: #2196f3;
+    }
+  }
+  .nav-link {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1721428571;
+    color: black;
+    letter-spacing: 0.02em;
+    &:hover,
+    :focus {
+      color: #2196f3;
+      transition-property: color;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      cursor: pointer;
+    }
+  }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    content: "";
+    height: 4px;
+    background: #2196f3;
+    position: absolute;
+    bottom: -33px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    left: 0;
+  }
+  .contacts {
+    display: flex;
+    justify-content: center;
+    &__icon {
+      margin-right: 10px;
+      fill: #757575;
+      cursor: pointer;
+      display: inline-flex;
+      align-self: center;
+    }
+  }
+  .contact {
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1721428571;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &__block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    &__block {
+      &:hover .contact,
+      :focus .contact {
+        color: #2196f3;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: color;
+      }
+      :hover .contacts__icon,
+      :focus .contacts__icon {
+        fill: #2196f3;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: fill;
+      }
+    }
+  }
+}
 .header-section {
   border-bottom: solid #ececec 1px;
 }

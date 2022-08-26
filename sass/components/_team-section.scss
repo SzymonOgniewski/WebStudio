@@ -33,9 +33,44 @@
     &__title {
       line-height: calc(32.81 / 28);
       font-size: 28px;
+      padding-bottom: 30px;
+      padding-top: 60px;
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .our-team-section {
+    &__title {
+      padding-bottom: 50px;
+      padding-top: 94px;
+      font-size: 36px;
+      line-height: calc(42.19 / 36);
+    }
+  }
+  .teammate-box {
+    width: 270px;
+    &__photo {
+      width: 270px;
+      height: 260px;
+    }
+  }
+  .team-list {
+    display: flex;
+    padding-bottom: 94px;
+  }
+  .our-team-section {
+    background-color: #f5f4fa;
+  }
+  .teammate-box {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .socialmedia {
+    padding-bottom: 30px;
+  }
+}
+
 .our-team-section {
   background-color: #f5f4fa;
   &__title {
@@ -43,8 +78,6 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 60px;
   }
 }
 .teammate-box {

@@ -1,4 +1,9 @@
 @media screen and (max-width: 767px) {
+  .newsletter-form {
+    &__input {
+      width: 100%;
+    }
+  }
   .footer {
     &__column {
       &__title {
@@ -11,18 +16,90 @@
     }
   }
 }
+@media screen and (max-width: 1199px) {
+  .newsletter-form {
+    &__name {
+      padding-top: 60px;
+    }
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input {
+      max-width: 60%;
+      min-width: 450px;
+    }
+  }
   .footer {
     width: 100%;
+
+    &__column {
+      &:not(:first-child) {
+        padding-left: 72px;
+      }
+      &:not(:last-child) {
+        padding-right: 72px;
+      }
+    }
+    &__block {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 @media screen and (max-width: 1199px) {
   .footer {
     text-align: center;
-    &__colum {
-      &__title {
-        padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 60px 0 60px 0;
+    display: flex;
+    &__logo {
+      font-size: 26px;
+      line-height: calc(30.52 / 26);
+      padding-top: 60px;
+    }
+
+    &__block {
+      display: inline-flex;
+    }
+
+    &__column {
+      &:not(:last-child) {
+        padding-right: 70px;
       }
+      &__title {
+        font-family: $primaryFontStyle;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: calc(16.41 / 14);
+        color: #ffffff;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .newsletter-form {
+    padding-left: 74px;
+    &__name {
+      display: block;
+      font-family: $primaryFontStyle;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: calc(16.41 / 14);
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      padding-bottom: 20px;
+    }
+    &__input {
+      width: 358px;
+      height: 50px;
+      padding-left: 16px;
     }
   }
 }
@@ -114,7 +191,6 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     padding-bottom: 20px;
-    padding-top: 60px;
   }
   &__input {
     font-family: $primaryFontStyle;
@@ -122,7 +198,6 @@
     font-weight: 400;
     line-height: calc(20 / 14);
     letter-spacing: 0.03em;
-    width: 100%;
     height: 50px;
     border-radius: 4px;
     background-color: transparent;

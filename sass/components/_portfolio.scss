@@ -1,11 +1,93 @@
+@media screen and (max-width: 767px) {
+  .button-section {
+    flex-basis: calc(100% / 33);
+  }
+  .project {
+    &__photo {
+      width: 100%;
+      height: 100%;
+    }
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
+  }
+  .overlay {
+    padding-bottom: 110px;
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .overlay {
+    padding-bottom: 146px;
+    margin-bottom: 146px;
+  }
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project {
+    &:nth-child(2n + 1) {
+      padding-right: 30px;
+    }
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .button-section {
+    padding-top: 45px;
+  }
+  .portfolio-section {
+    padding-top: 40px;
+  }
+  .overlay {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .portfolio-card-description {
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-section {
+    padding-top: 79px;
+    padding-bottom: 50px;
+  }
+
+  .project {
+    &:not(:last-child) {
+      padding-right: 30px;
+    }
+    &:nth-child(3n) {
+      padding-right: 0;
+    }
+    &:nth-child(-n + 6) {
+      padding-bottom: 30px;
+    }
+  }
+  .photo {
+    display: block;
+  }
+  .overlay {
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 49px 45px 49px 24px;
+    margin-bottom: 110px;
+  }
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .button-section {
   display: flex;
-  flex-basis: calc(100% / 33);
-  padding-top: 45px;
 }
-.portfolio-section {
-  padding-top: 40px;
-}
+
 .button {
   margin-top: 15px;
   text-align: center;
@@ -20,7 +102,7 @@
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  width: 126px;
+  width: 128px;
   height: 38px;
 
   &:hover,
@@ -36,18 +118,13 @@
   }
 }
 .buttons {
-  margin-left: auto;
-  margin-right: auto;
   background-color: #ffffff;
   gap: 8px;
 }
 .project {
-  &:not(:last-child) {
-    padding-bottom: 30px;
-  }
   &__photo {
     width: 100%;
-    height: 100%px;
+    height: 100%;
   }
 
   &__card {
@@ -104,9 +181,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 77px 24px;
+  display: flex;
   transform: translateY(148%);
-  margin-bottom: 110px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-property: transform;

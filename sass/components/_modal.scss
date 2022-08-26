@@ -1,3 +1,80 @@
+@media screen and (max-width: 767px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    width: 93.75%;
+    height: 76.5%;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    width: 58.6%;
+    height: 65%;
+    min-height: 609px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal-form {
+    &__header {
+      font-size: 20px;
+      line-height: calc(30 / 20);
+    }
+    &__submit-button {
+      &__block {
+        padding-top: 30px;
+      }
+    }
+  }
+  .modal-checkbox {
+    &__checkmark {
+      top: 4px;
+      left: 0;
+    }
+    &__text {
+      margin-left: 24px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    min-height: 581px;
+  }
+  .modal-form {
+    border: none;
+    position: relative;
+    &__input-name {
+      display: grid;
+      position: relative;
+    }
+    &__header {
+      font-size: 20px;
+      line-height: calc(23.44 / 20);
+    }
+
+    &__submit-button {
+      &__block {
+        padding-top: 30px;
+      }
+    }
+  }
+  .modal-checkbox {
+    &__checkmark {
+      top: 4px;
+      left: 35px;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    &__text {
+      margin-left: 66px;
+    }
+  }
+}
 .backdrop {
   position: fixed;
   width: 100%;
@@ -9,15 +86,9 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear;
   transform: scale(1);
-  height: 100%;
 }
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 93.75%;
-  height: 76.5%;
-  min-height: 609px;
   background-color: white;
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -64,9 +135,7 @@
   }
   &__header {
     font-family: $primaryFontStyle;
-    font-size: 20px;
     font-weight: 700;
-    line-height: calc(23.44 / 20);
     letter-spacing: 0.03em;
     text-align: center;
     padding-top: 40px;
@@ -160,7 +229,6 @@
     border: none;
     cursor: pointer;
     &__block {
-      padding-top: 30px;
       text-align: center;
     }
   }
@@ -177,8 +245,7 @@
     background-color: #ffffff;
     border: 2px solid black;
     position: absolute;
-    top: 4px;
-    left: 0;
+
     cursor: pointer;
     border-radius: 2px;
   }
@@ -211,7 +278,7 @@
     line-height: calc(14.06 / 12);
     letter-spacing: 0.03em;
     color: #757575;
-    margin-left: 24px;
+
     cursor: default;
   }
 }
