@@ -1,21 +1,31 @@
-.main-header-section {
-  background-color: $backgroundColor;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/main-adv/Main-adv-x1.jpg);
+@media screen and(max-width:767px) {
+  .main-header-section {
+    background-color: $backgroundColor;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-adv/Main-adv-x1.jpg);
+  }
 }
-@media screen and (min-device-pixel-ratio: 2),
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .main-header-section {
+    background-color: $backgroundColor;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+
+    background-repeat: no-repeat;
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
@@ -24,6 +34,50 @@
       url(../images/main-adv/Main-adv-x2.jpg);
   }
 }
+@media screen and (min-width: 768px) and(max-width:1199px) {
+  .main-header-section {
+    background-color: $backgroundColor;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-adv/Main-adv-x1-768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main-header-section {
+    background-color: $backgroundColor;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-adv/Main-adv-x2-768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-advertisment {
+    &__header {
+      max-width: 450px;
+    }
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .main-advertisment {
     padding: 118px 0;

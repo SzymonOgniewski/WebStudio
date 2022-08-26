@@ -10,3 +10,8 @@ body {
   font-family: $primaryFontStyle;
   color: $primaryColor;
 }
+@media screen and (max-width: 1199px) {
+  .our-job-section {
+    display: none;
+  }
+}

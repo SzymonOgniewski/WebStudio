@@ -1,6 +1,121 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    padding-right: 83px;
+  }
+  .navigation {
+    &__item {
+      align-self: center;
+
+      &:nth-child(2) {
+        padding-right: 7.8%;
+      }
+      &:nth-child(3) {
+        padding-right: 7.8%;
+      }
+    }
+  }
+  .contacts {
+    align-items: flex-start;
+    padding-left: 13.02%;
+  }
+  .contact {
+    &__block {
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .current {
+    position: relative;
+    &::after {
+      content: "";
+      height: 4px;
+      background: #2196f3;
+      position: absolute;
+      bottom: -40px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      width: 100%;
+      left: 0;
+    }
+  }
+}
 @media screen and (min-width: 768px) {
-  .navigation__icon__box {
-    display: none;
+  .page-header {
+    &__menu {
+      justify-content: space-between;
+      display: flex;
+      gap: 13.2%;
+    }
+  }
+  .header-section {
+    border-bottom: solid #ececec 1px;
+    padding: 26px 0 26px 0;
+  }
+  .nav-link {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1721428571;
+    color: black;
+    letter-spacing: 0.02em;
+    &:hover,
+    :focus {
+      color: #2196f3;
+      transition-property: color;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      cursor: pointer;
+    }
+  }
+  .navigation {
+    display: flex;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__icon {
+      margin-right: 10px;
+      fill: #757575;
+      cursor: pointer;
+      display: inline-flex;
+      align-self: center;
+    }
+  }
+  .contact {
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1721428571;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &__block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__block {
+      &:hover .contact,
+      :focus .contact {
+        color: #2196f3;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: color;
+      }
+      :hover .contacts__icon,
+      :focus .contacts__icon {
+        fill: #2196f3;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: fill;
+      }
+    }
   }
 }
 @media screen and (max-width: 767px) {

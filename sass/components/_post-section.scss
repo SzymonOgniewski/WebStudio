@@ -1,3 +1,19 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .post {
+    width: 50%;
+    &:nth-child(odd) {
+      padding-right: 30px;
+    }
+    &:nth-child(-n + 4) {
+      padding-bottom: 30px;
+    }
+  }
+  
+}
 @media screen and (max-width: 767px) {
   .post-section {
     background-color: #ffffff;
