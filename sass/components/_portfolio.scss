@@ -55,7 +55,6 @@
     padding-top: 79px;
     padding-bottom: 50px;
   }
-
   .project {
     &:not(:last-child) {
       padding-right: 30px;
@@ -82,6 +81,7 @@
   .project-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .button-section {
