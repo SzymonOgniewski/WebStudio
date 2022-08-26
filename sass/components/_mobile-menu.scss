@@ -110,9 +110,13 @@
       transition-property: color;
     }
   }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .mobile-menu-contacts {
-  padding-top: 87%;
+  padding-top: 20%;
   &__tel {
     font-family: $primaryFontStyle;
     font-size: 34px;

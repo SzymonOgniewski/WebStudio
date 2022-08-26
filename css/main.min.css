@@ -1673,9 +1673,13 @@ body {
   transition-duration: 250ms;
   transition-property: color;
 }
+.mobile-menu__footer {
+  display: flex;
+  flex-direction: column;
+}
 
 .mobile-menu-contacts {
-  padding-top: 87%;
+  padding-top: 20%;
 }
 .mobile-menu-contacts__tel {
   font-family: "Roboto", sans-serif;
