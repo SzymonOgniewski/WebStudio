@@ -1566,6 +1566,9 @@ body {
   .menu {
     display: none;
   }
+  .current {
+    color: #2196f3 !important;
+  }
 }
 @media screen and (min-width: 768px) {
   .navigation__icon__box {
@@ -1594,6 +1597,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-property: fill;
+}
+
+.mobile-menu-flexbox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-container {
@@ -1636,9 +1646,10 @@ body {
   transition-property: transform;
 }
 .mobile-menu__socialmedia {
+  padding-top: 64px;
   display: inline-flex;
   flex-wrap: wrap;
-  padding-top: 8%;
+  width: 100%;
 }
 .mobile-menu__socialmedia__list-item {
   font-style: "Roboto", sans-serif;
@@ -1678,9 +1689,6 @@ body {
   flex-direction: column;
 }
 
-.mobile-menu-contacts {
-  padding-top: 20%;
-}
 .mobile-menu-contacts__tel {
   font-family: "Roboto", sans-serif;
   font-size: 34px;
