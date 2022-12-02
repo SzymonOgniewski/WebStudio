@@ -1,6 +1,11 @@
 @media screen and (max-width: 767px) {
   .button-section {
+    align-items: center;
+
     flex-basis: calc(100% / 33);
+  }
+  .buttons {
+    text-align: center;
   }
   .project {
     &__photo {
