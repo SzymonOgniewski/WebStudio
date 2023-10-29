@@ -1,6 +1,6 @@
 #  [WebStudio](https://szymonogniewski.github.io/WebStudio/)
 
-WebStudio a business webiste made for a potential customer. 
+WebStudio a fully responsive business webiste made for a potential customer. 
 
 ## Technologies
 
